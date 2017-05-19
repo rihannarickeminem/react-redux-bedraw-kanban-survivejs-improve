@@ -1,0 +1,157 @@
+body {
+  background: #f9f9f9;
+
+  font-family: sans-serif;
+}
+
+.lane {
+  display: inline-block;
+
+  margin: 1em;
+
+  background-color: #efefef;
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+
+  min-width: 10em;
+  vertical-align: top;
+}
+
+.lane-header {
+  overflow: auto;
+
+  padding: 1em;
+
+  color: #efefef;
+  /* background-color: #333; */
+
+  /* border-top-left-radius: 0.5em; */
+  /* border-top-right-radius: 0.5em; */
+}
+
+.lane-name {
+  float: left;
+  color: black;
+}
+
+.lane-add-note {
+  float: left;
+
+  margin-right: 0.5em;
+}
+
+.group-delete {
+  float: right;
+
+  margin-left: 0.5em;
+
+  visibility: hidden;
+}
+.lane-header:hover .group-delete {
+  visibility: visible;
+}
+
+.add-group, .lane-add-note button {
+  cursor: pointer;
+
+  background-color: #fdfdfd;
+  border: 1px solid #ccc;
+}
+
+.group-delete button {
+  padding: 0;
+
+  cursor: pointer;
+
+  color: gray;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+}
+
+.notes {
+  margin: 0.5em;
+  padding-left: 0;
+
+  max-width: 10em;
+  list-style: none;
+}
+
+.note {
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+
+  background-color: #fdfdfd;
+  box-shadow: 0 0 0.3em .03em rgba(0,0,0,.3);
+}
+.note:hover {
+  box-shadow: 0 0 0.3em .03em rgba(0,0,0,.7);
+
+  transition: .6s;
+}
+
+.note .value {
+  /* force to use inline-block so that it gets minimum height */
+  display: inline-block;
+}
+
+.note .delete {
+  float: right;
+
+  padding: 0;
+
+  background-color: #fdfdfd;
+  border: none;
+
+  cursor: pointer;
+
+  visibility: hidden;
+}
+.note:hover .delete {
+  visibility: visible;
+}
+.note-title {
+  color: gray;
+  margin: 0 0 7px 0;
+}
+
+.note .influencer-name {
+  border-bottom: 1px solid blue;
+  padding: 4px;
+}
+.user-info {
+	margin: 10px;
+}
+.user-info input {
+	font-size: 20px;
+	margin: 7px;
+  padding: 3px;
+}
+
+.button.get-user-info {
+  outline: none;
+	background: rgb(242, 255, 230);
+  border-radius: 0.5em;
+}
+
+.button.get-user-info:hover{
+	background: rgb(176, 255, 102);
+	cursor: pointer;
+}
+
+.message {
+  display: none;
+}
+
+.show {
+  display: inline-block;
+  margin: 0 5px 0 0;
+  padding: 5px;
+}
+
+.success {
+  color: #3333ff;
+}
+
+.error-message {
+  color: #ff0000;
+}
